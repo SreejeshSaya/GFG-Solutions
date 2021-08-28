@@ -3,17 +3,16 @@
 class Solution {
     private:
     bool isValid;
-    void treeHelper(Node* root) {
-        if(!isValid || !root) return;
-        if(!root->left && !root->right) return;
+    int treeHelper(Node* root) {
+        if(!isValid || !root) return 0;
+        if(!root->left && !root->right) return root->data;
         
         int l=0, r=0;
-        if(root->left) l=root->left->data;
-        if(root->right) r=root->right->data;
-        if(root->data != (l+r)) isValid=false;
+        l = treeHelper(root->left);
+        r = treeHelper(root->right);
         
-        treeHelper(root->left);
-        treeHelper(root->right);
+        if((l+r) != root->data) isValid=false;
+        return l+r+root->data;
     }
     
     public:
@@ -23,7 +22,6 @@ class Solution {
         return isValid;
     }
 };
-
 
 // GFG Article
 int isLeaf(node *node) {
