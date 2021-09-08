@@ -12,4 +12,16 @@
 + mirrorTree
 + KadaneAlgorithm
 + IslandNumber
-+ 
++ InsertNodeBST
++ LevelOrderBST
++ MissingNumber
++ NthNodeFromEndLL
++ Num1Bits
++ PalindromeString
++ ZigzagLevelOrderBST
++ bfsGraph
++ deleteXthNodeLL
++ root2LeafPathSum
++ spiralLevelOrderBT
++ subarraySum0
++ BTHeight
