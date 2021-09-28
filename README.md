@@ -35,3 +35,8 @@
 + ConstructBTFromPreOrder
 + AddAllGreaterNodesInBST
 + KthSmallestInBST
++ DiagonalTraversalBST
++ CheckBST
++ MiddleLL
++ VerticalOrderTraversalBST
++ GenerateParentheses
